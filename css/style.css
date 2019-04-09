@@ -1,0 +1,90 @@
+
+body {
+    font-family: "Just Me Again Down Here";
+    background: url("images/chalkboard-green.jpg") no-repeat;
+    background-size: cover;
+    color: white;
+
+    border: 20px solid;
+    border-image: url("images/wood.jpg") 60 stretch;
+    border-spacing: 0;
+    margin: auto;
+    text-align: center;
+}
+
+#buttons{
+    top: 43%;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+button {
+    background-color: transparent;
+    color:white;
+    font-size:200%;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+#characters{
+    top: 10%;
+    max-width:17%;
+}
+#over{
+    color: white;
+    font-size: 300%;
+    top: 6%;
+    left: 40%;
+}
+#definition{
+    text-align: center;
+    font-size: 250%;
+}
+#playingarea{
+    top: 30%;
+    left: 40%;
+    font-size: 250%;
+}
+#thescore{
+    top: 30%;
+    right: 80%;
+    font-size: 150%;
+}
+#getname{
+    top: 10%;
+    left: 34%;
+    position: absolute;
+    font-size: 200%;
+}
+#title{
+    font-size: 400%;
+}
+
+input[type=submit], #name {
+    font-family: "Just Me Again Down Here";
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    border: none
+}
+
+input[type="text"] {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    button {
+        font-size:200%;
+        padding: 8px 15px 8px 15px;
+    }
+
+    #buttons {
+        width: 90%;
+    }
+}

@@ -71,13 +71,14 @@ input[type=submit], #name {
     color: white;
     border: none
 }
-
+.name{
+    cursor: pointer;
+}
 input[type="text"] {
     outline: none;
     border: none;
-    cursor: pointer;
+    
 }
-
 @media only screen and (max-width: 600px) {
     button {
         font-size:200%;

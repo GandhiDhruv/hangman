@@ -8,12 +8,12 @@ function select_word(){
             TATTOO: 'A form of body modification where a design is made by inserting ink',
             ELECTRICITY: 'The set of physical phenomena associated with the presence and motion of electric charge.',
             NARCISSISM:'The pursuit of gratification from vanity or egotistic admiration of one\'s idealised self image and attributes.',
-            QUARANTINE:'it is a restraint upon the activities or communication of persons or the transport of goods designed to prevent the spread of disease or pests, for a certain period of time.',
-            AWKWARD: 'causing difficulty; hard to do or deal with.',
-            JINX:'a person or thing that brings bad luck.',
-            OXYGEN: 'a colorless, odorless reactive gas, the chemical element of atomic number 8 and the life-supporting component of the air.',
-            YACHT: 'a medium-sized sailboat equipped for cruising or racing.',
-            ZOMBIE: 'a corpse said to be revived by witchcraft, especially in certain African and Caribbean religions.',
+            QUARANTINE:'It is a restraint upon the activities or communication of persons or the transport of goods designed to prevent the spread of disease or pests, for a certain period of time.',
+            AWKWARD: 'Causing difficulty; hard to do or deal with.',
+            JINX:'A person or thing that brings bad luck.',
+            OXYGEN: 'A colorless, odorless reactive gas, the chemical element of atomic number 8 and the life-supporting component of the air.',
+            YACHT: 'A medium-sized sailboat equipped for cruising or racing.',
+            ZOMBIE: 'A corpse said to be revived by witchcraft, especially in certain African and Caribbean religions.',
             }
             result = [];
             word_selector = Math.floor((Math.random() * 10));
@@ -55,7 +55,7 @@ function select_word(){
                             // console.log('green')
                             btn.disabled = true
                             count++
-                            document.getElementById("thescore").innerHTML= player_name  + '\'s score: '+ count
+                            document.getElementById("thescore").innerHTML= player_name  + '\'s score: '+ count + '; Lives left: ' + lives
                             
                         }
                     }
@@ -65,8 +65,9 @@ function select_word(){
                         btn.style.backgroundColor = 'red'
                         btn.disabled = true
                         count--
-                        document.getElementById("thescore").innerHTML= player_name  + '\'s score: '+ count
                         lives--;
+                        document.getElementById("thescore").innerHTML= player_name  + '\'s score: '+ count + '; Lives left: ' + lives 
+                      
                         console.log(lives)
                     }
                     console.log(lives)

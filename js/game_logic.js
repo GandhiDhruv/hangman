@@ -16,7 +16,7 @@ function select_word(){
             ZOMBIE: 'a corpse said to be revived by witchcraft, especially in certain African and Caribbean religions.',
             }
             result = [];
-            word_selector = Math.floor((Math.random() * 5));
+            word_selector = Math.floor((Math.random() * 10));
             selected_word=Object.keys(words)[word_selector]
             meaning = words[selected_word]   
             //console.log(selected_word)

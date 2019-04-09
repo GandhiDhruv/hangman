@@ -71,9 +71,6 @@ input[type=submit], #name {
     color: white;
     border: none
 }
-.name{
-    cursor: pointer;
-}
 input[type="text"] {
     outline: none;
     border: none;

@@ -74,7 +74,8 @@ function select_word(){
                     checker(result, selected_word)
                     endGame(lives); 
                     }            
-                } 
+                }
+                document.getElementById("thescore").innerHTML= player_name  + '\'s score: '+ count + '; Lives left: ' + lives 
             }
         
         function endGame(count){// when player dies in game genrates the score and restart button

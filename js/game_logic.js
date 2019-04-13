@@ -9,14 +9,20 @@ function select_word(){
             ELECTRICITY: 'The set of physical phenomena associated with the presence and motion of electric charge.',
             NARCISSISM:'The pursuit of gratification from vanity or egotistic admiration of one\'s idealised self image and attributes.',
             QUARANTINE:'It is a restraint upon the activities or communication of persons or the transport of goods designed to prevent the spread of disease or pests, for a certain period of time.',
-            AWKWARD: 'Causing difficulty; hard to do or deal with.',
             JINX:'A person or thing that brings bad luck.',
             OXYGEN: 'A colorless, odorless reactive gas, the chemical element of atomic number 8 and the life-supporting component of the air.',
             YACHT: 'A medium-sized sailboat equipped for cruising or racing.',
             ZOMBIE: 'A corpse said to be revived by witchcraft, especially in certain African and Caribbean religions.',
+            NEWTON: 'Discoverer of Garvity.',
+            DEMIGOD: 'offspring of a god and human.',
+            ZEUS: 'god of lightning.',
+            ADAMANTIUM: ' substance bonded to the character Wolverine\'s skeleton and claws',
+            BLACKHOLE:'a region of spacetime exhibiting such strong gravitational effects that nothing—not even particles and electromagnetic radiation such as light—can escape from inside it',
+            MESSI: 'God of Football, plays for FC Barcalona.',
+            RONALDO: 'Second best Player on earth'
             }
             result = [];
-            word_selector = Math.floor((Math.random() * 10));
+            word_selector = Math.floor((Math.random() * (Object.keys(words).length)));
             selected_word=Object.keys(words)[word_selector]
             meaning = words[selected_word]   
             //console.log(selected_word)

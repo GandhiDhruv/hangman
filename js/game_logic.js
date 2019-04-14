@@ -13,7 +13,7 @@ function select_word(){
             OXYGEN: 'A colorless, odorless reactive gas, the chemical element of atomic number 8 and the life-supporting component of the air.',
             YACHT: 'A medium-sized sailboat equipped for cruising or racing.',
             ZOMBIE: 'A corpse said to be revived by witchcraft, especially in certain African and Caribbean religions.',
-            NEWTON: 'Discoverer of Garvity.',
+            NEWTON: 'Discoverer of Gravity.',
             DEMIGOD: 'Offspring of a god and human.',
             ZEUS: 'Greek God of lightning.',
             ADAMANTIUM: 'A substance bonded to the character Wolverine\'s skeleton and claws',

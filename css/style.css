@@ -74,10 +74,11 @@ button {
 
 input[type=submit], #name {
     font-family: "Just Me Again Down Here";
-    background: white;
+    background: transparent;
     font-size: 25px;
     color: white;
-    border: none;
+    border: solid black;
+    border-radius: 20px;
     outline: none;
 }
 

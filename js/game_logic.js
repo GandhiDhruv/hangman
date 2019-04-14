@@ -16,10 +16,12 @@ function select_word(){
             NEWTON: 'Discoverer of Garvity.',
             DEMIGOD: 'offspring of a god and human.',
             ZEUS: 'god of lightning.',
-            ADAMANTIUM: ' substance bonded to the character Wolverine\'s skeleton and claws',
-            BLACKHOLE:'a region of spacetime exhibiting such strong gravitational effects that nothing—not even particles and electromagnetic radiation such as light—can escape from inside it',
+            ADAMANTIUM: 'A substance bonded to the character Wolverine\'s skeleton and claws',
+            BLACKHOLE:'A region of spacetime exhibiting such strong gravitational effects that nothing—not even particles and electromagnetic radiation such as light—can escape from inside it',
             MESSI: 'God of Football, plays for FC Barcalona.',
-            RONALDO: 'Second best Player on earth'
+            RONALDO: 'Second best Soccer player on earth, plays for Juventus FC',
+            ALOHOMORA: 'A spell that is used to opens locks on doors and windows in Harry Potterverse.',
+            MINATONAMIKAZE: 'Naruto\'s father\'s name', 
             }
             result = [];
             word_selector = Math.floor((Math.random() * (Object.keys(words).length)));

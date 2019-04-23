@@ -103,6 +103,7 @@ function select_word(){
                     location.reload();
                 };
                 save_score(score)
+                display_board()
             }
         }
         function checker(x, y){
@@ -124,7 +125,18 @@ function select_word(){
             }
         function save_score(score){
             let player_name = document.getElementById('name').value
-            let firebaseRef = firebase.database().ref()
-            firebaseRef.child(player_name).set(score)
+            let firebaseRef = firebase.database().ref().child("players")
+            firebaseRef.child(player_name).set({"name": player_name, "score": score})   
+        }
+        function display_board(){
+            let rootRef = firebase.database().ref().child('players');
+            rootRef.on("child_added", snap => {
+                let name = snap.child("name").val()
+                let score = snap.child("score").val()
+                let table = document.createElement("table")
+                document.body.appendChild(table)
+                table.id = "tabl"
+                document.getElementById('tabl').append("<tr><td>"+name+"</td><td>"+score+"</td></tr>");
+            })
         }
         

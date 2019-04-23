@@ -80,20 +80,20 @@ function select_word(){
                     }
                     console.log(lives)
                     checker(result, selected_word)
-                    endGame(lives); 
+                    endGame(lives, count); 
                     }            
                 }
                 document.getElementById("thescore").innerHTML= player_name  + '\'s score: '+ count + '; Lives left: ' + lives 
             }
         
-        function endGame(count){// when player dies in game genrates the score and restart button
+        function endGame(count, score){// when player dies in game genrates the score and restart button
             if(count <= 0){
                 document.getElementById('characters').style.display = 'none';
                 document.getElementById('buttons').style.display = 'none';
                 document.getElementById('definition').style.display = 'none'
                 document.getElementById('playingarea').style.display = 'none'
                 //document.getElementById('displayscore').style.display = 'none'
-                document.getElementById('over').innerHTML = 'Game Over' + "<br>" + "The Answer was : " + selected_word
+                document.getElementById('over').innerHTML = 'Game Over'+ "<br>"+"Your Score is"+ score + "<br>" + "The Answer was : " + selected_word
 
                 let restart = document.createElement('P');
                 document.getElementById('over').appendChild(restart);
@@ -102,6 +102,7 @@ function select_word(){
                 restart.onclick = function(){ // reloading the page for restarting the game
                     location.reload();
                 };
+                save_score(score)
             }
         }
         function checker(x, y){
@@ -121,4 +122,9 @@ function select_word(){
                     return false
                 }
             }
+        function save_score(score){
+            let player_name = document.getElementById('name').value
+            let firebaseRef = firebase.database().ref()
+            firebaseRef.child(player_name).set(score)
+        }
         
